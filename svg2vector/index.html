@@ -46,7 +46,13 @@
                 Keep in mind that Android does support svg files only partially.</div>
         </div>
     </div>
-
+    <div class="panel">
+        <textarea id="svg-code" style=" width: 100%; height: 150px;">Paste your SVG code here...</textarea>
+        <br/>
+        <input type="button" value="Submit SVG Code" id="svg-code-submit" onclick="javascript:parseFromTextArea();" class="btn btn-default btn-sm">
+        <br/>
+        <br/>
+    </div>
     <div id="output-box">
         <div id="button-box" class="btn-group">
             <button type="button" class="btn btn-primary btn-sm" onclick="download(this)">Download
@@ -67,17 +73,14 @@
 
 <div class="container">
     <footer>
-        &copy; 2014, Ozodrukh Abdullaev<br>
-        <small>| <a href="https://github.com/ozodrukh">other projects</a> |</small>
+        <small>| <a href="https://github.com/irshadc">other projects</a> |</small>
     </footer>
 </div>
 
 <input type="file" id="dropzone-dialog" style="opacity: 0;display:none">
-<textarea id="svg-code"></textarea>
-<input type="button" id="svg-code-submit" value="Submit SVG Code" onclick="javascript:parseFromTextArea();"></input>
 
 <div class="ribbon right grey hidden-xs">
-    <a href="https://github.com/ozodrukh/Svg2MrVector">Fork me on GitHub</a>
+    <a href="https://github.com/irshadc/Svg2MrVector">Fork me on GitHub</a>
 </div>
 
 <script src="js/jquery-1.11.1.min.js"></script>
